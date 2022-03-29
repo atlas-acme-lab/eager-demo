@@ -229,6 +229,12 @@ body {
   /* opacity: 0.9; */
 }
 
+.fruit-text {
+  font-size: 25px;
+  color: black;
+  padding-top: 15px;
+}
+
 .return-home {
   position: absolute;
   left: 20px;
