@@ -1,0 +1,367 @@
+:root {
+  --theme-blue: #3481CB;
+  --theme-white: #fff;
+  --theme-yellow: #FDA333;
+  --theme-shadow: rgba(153, 153, 153, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--theme-blue);
+  background-color: var(--theme-white);
+  font-family: 'Patrick Hand';
+}
+
+/* MODIFIERS */
+.hidden {
+  display: none !important;
+}
+
+.yellow-text {
+  color: var(--theme-yellow);
+}
+
+/* NEW VERSION */
+.view-section {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: left 300ms ease-in-out;
+  border-radius: 3px;
+  border: 2px solid var(--theme-blue);
+  background-color: var(--theme-white);
+}
+
+/**BUTTONS**/
+.left-side-container {
+  display: inline-block;
+  width: 65%;
+  height: 100%;
+}
+
+.right-side-container {
+  display: inline-block;
+  vertical-align: top;
+  /* background-color: red; */
+  width: 30%;
+  height: 100%;
+}
+
+#landing-buttons {
+  width: 100%;
+  height: 68%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 8%;
+  position: relative;
+}
+
+.button-item-div {
+  height: 0px;
+}
+
+.center-container {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chart-container {
+  width: 100%;
+  height: 60%;
+}
+
+#landing-image {
+  display: block;
+  margin: auto;
+  z-index: -9999;
+}
+
+#landing-view button, #scan-view button, #bar-chart-view button, #line-chart-view button, #chart-view button {
+  position: absolute;
+  font-family: 'Mali';
+  background: var(--theme-white);
+  border: 8px solid var(--theme-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+
+#activate-tutorial {
+  /* top: 10vh; */
+  /* background: var(--theme-white);
+  border: 8px solid var(--theme-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px; */
+}
+
+#activate-diy-bar {
+  /* top: 150px; */
+}
+
+#landing-view button {
+  background: var(--theme-white);
+  border: 8px solid var(--theme-blue);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  border-radius: 27px;
+  color: var(--theme-blue);
+  font-size: 30px;
+  padding: 15px;
+  width: 290px;
+}
+
+#landing-view .half-page-svg {
+  height: 100vh;
+  /* margin-left: 7vw; */
+}
+
+.offscreen {
+  left: -150vw;
+}
+
+#chart-title {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 36px;
+  letter-spacing: 3px;
+}
+
+#chart-bars {
+  display: flex;
+  /* justify-content: center; */
+  align-items: flex-end;
+  width: 406px;
+  height: 250px;
+  gap: 40px;
+  position: absolute;
+  top: 93px;
+  left: calc(50vw - 206px);
+  /* background-color: red; */
+}
+
+#bar-0 {
+  background-color: #EA3942;
+}
+
+#bar-1 {
+  background-color: #F3D257;
+}
+
+#bar-2 {
+  background-color: #3D8A75;
+}
+
+#bar-3 {
+  background-color: #F8AB4F;
+}
+
+#bar-4 {
+  background-color: #C2D052;
+}
+
+.chart-bar {
+  border-radius: 2px;
+  transition: height 300ms ease-in-out, color 300ms ease-out;
+  position: relative;
+  height: 0px;
+  width: 40px;
+  margin-left: 6px;
+  /* margin: 0 30px; */
+  color: #000;
+}
+
+.bar-val {
+  position: absolute;
+  top: -35px;
+  font-size: 25px;
+  text-align: center;
+  width: 100%;
+}
+
+.hide-num {
+  color: transparent;
+}
+
+#chart-icons {
+  display: flex;
+  /* position: absolute; */
+  position: relative;
+  top: 60%;
+  justify-content: center;
+  width: 100%;
+}
+
+.fruit-icon {
+  /* width: 75px;
+  margin: 0 8px;
+  background: var(--theme-white);
+  border: 8px solid var(--theme-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  padding: 9px; */
+  width: 61px;
+  margin: 0 15px;
+  /* background: var(--theme-white); */
+  /* border: 6px solid var(--theme-blue); */
+  /* box-shadow: 0px 4px 4px rgb(0 0 0 / 25%); */
+  border-radius: 12px;
+  padding: 9px;
+}
+
+.return-home {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  padding: 17px;
+  border-radius: 20px;
+  background: var(--theme-white);
+  border: 8px solid var(--theme-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+
+.pause-detection {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 17px 20px;
+  border-radius: 20px;
+}
+
+#x-axis {
+  position: absolute;
+  height: 6px;
+  left: calc(50vw - 220px);
+  width: 430px;
+  top: 342px;
+  background-color: black;
+}
+
+#y-axis {
+  position: absolute;
+  height: 400px;
+  top: 90px;
+  left: calc(50vw - 227px);
+}
+
+#y-bar {
+  height: 258px;
+  width: 1.5vh;
+  background-color: black;
+  position: absolute;
+  /* top: 0.7vh; */
+}
+
+#y-axis-labels {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+  position: absolute;
+  top: -20.8px;
+  gap: 23.6px;
+  left: -20px;
+}
+
+#y-axis-labels span {
+  font-size: 29px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  margin-left: -30px;
+}
+
+#y-axis-labels span::after {
+  content: "";
+  width: 15px;
+  height: 7px;
+  background-color: black;
+  position: absolute;
+  top: 21px;
+  left: 42px;
+}
+
+/* SCAN VIEW */
+#scan-view .half-page-svg {
+  /* position: absolute; */
+  /* position: absolute; */
+  /* bottom: 5px; */
+  /* left: 60px; */
+  /* width: 276px; */
+  top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+  width: 65%;
+}
+
+#activate-scan, #activate-chart {
+  font-size: 35px;
+  color: var(--theme-blue);
+  position: absolute;
+  right: 60px;
+  top: 250px;
+  padding: 10px 30px;
+}
+
+#scan-tip {
+  font-family: 'Patrick Hand';
+  position: absolute;
+  width: 270px;
+  font-size: 23px;
+  right: 20px;
+  top: 120px;
+}
+
+#activate-scan.disabled, #activate-chart.disabled {
+  color: var(--theme-shadow);
+  border: 8px solid var(--theme-shadow);
+}
+
+#scanned-chart-title, #title-line {
+  position: absolute;
+  left: calc(50vw - 219px);
+  top: 33px;
+  background-color: #000;
+  width: 430px;
+  height: 40px;
+  transform: scaleX(-1) scaleY(-1);
+}
+
+#scanned-chart-icons, #icon-line {
+  /* position: absolute;
+  left: calc(50vw - 250px);
+  bottom: 13px;
+  background-color: #000;
+  transform: scaleX(-1) scaleY(-1); */
+  position: absolute;
+  left: calc(50vw - 219px);
+  top: 360px;
+  background-color: #000;
+  transform: scaleX(-1) scaleY(-1);
+  width: 430px;
+  height: 40px;
+}
+
+#pie-chart {
+  position: absolute;
+  left: calc(50vw - 250px);
+  top: calc(50vh - 150px);
+}
+
+#line-chart {
+  position: absolute;
+  top: 80px;
+  left: calc(50vw - 206px);
+  /* background-color: red; */
+}

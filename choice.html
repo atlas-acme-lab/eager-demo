@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Al's Grocery</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+      html {
+        font-size: 16px;
+        --row-height: calc(calc(100vh - 20px) / 6 - 20px);
+      }
+
+      #home-splash {
+        /* height: calc(100vh - 40px);
+        width: calc(50vw - 30px); */
+        height: calc(100vh - 40px);
+        width: 50%;
+      }
+
+      body {
+        background-color: white;
+        padding: 20px;
+        margin: 0;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: calc(100vw - 40px);
+        height: calc(100vh - 40px);
+        gap: 20px;
+      }
+
+      .preview-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      h1 {
+        grid-column: 2/6;
+        background-color: grey;
+        text-align: center;
+        margin: 0;
+        padding-top: calc(var(--row-height) / 2 - 0.5em);
+      }
+
+      #home {
+        display: inline-block;
+        grid-row: 1;
+        grid-column: 1;
+        background-color: lavender;
+        text-align: center;
+        /* the cheat code for vertical align */
+        padding-top: calc(var(--row-height) / 2 - 0.5em);
+      }
+
+      .tutorial-link {
+        padding-top: calc(var(--row-height) / 2 - 0.5em);
+        text-align: center;
+        background-color: aqua;
+        grid-row:6;
+      }
+
+      .tutorial-img {
+        grid-row-start: 3;
+        grid-row-end: 6;
+        background-size: contain;
+        margin: 0;
+      }
+
+      .first-img {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        
+        background-image: url("../img/scan-1.gif");
+      }
+      .second-img {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        
+        background-image: url("../img/scan-1.gif");
+      }
+      .third-img {
+        grid-column-start: 5;
+        grid-column-end: 7;
+        
+        background-image: url("../img/scan-1.gif");
+      }
+
+      .first-link {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      .second-link {
+        grid-column-start: 3;
+        grid-column-end: 5;
+      }
+      .third-link {
+        grid-column-start: 5;
+        grid-column-end: 7;
+      }
+
+    </style>
+  </head>
+  <body>
+    <section class="grid-container">
+      <a href="../index.html" id="home">Home</a>
+      <h1>DIY Charts</h1>
+      <h1>Chose A Chart</h1>
+
+      <div class="tutorial-img first-img"></div>
+      <a class="tutorial-link first-link" href="./bar/index.html">Bar Chart</a>
+
+      <div class="tutorial-img second-img"></div>
+      <a class="tutorial-link second-link">Line Chart</a>
+
+      <div class="tutorial-img third-img"></div>
+      <a class="tutorial-link third-link">Pie Chart</a>
+    </section>
+
+
+  </body>
+</html>

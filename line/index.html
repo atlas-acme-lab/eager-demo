@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Al's Grocery</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mali&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://unpkg.com/beholder-detection@1.3.0/dist/beholder-detection.js"></script>
+
+  <script src="ChartManager.js"></script>
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <!-- <section id="beholder-root" class="hidden"></section> -->
+  <section id="beholder-root" style="margin-top: 20%"></section>
+
+  <!-- <section id="landing-view" class="view-section offscreen">
+    <img class="half-page-svg" src="../img/start_screen_preview.svg">
+    <button id="activate-tutorial">Tutorial</button>
+    <button id="activate-diy-bar">DIY Charts</button>
+  </section> -->
+
+  <!-- <section id="scan-view" class="view-section offscreen">
+    <img id="scan-gif-1" class="half-page-svg" src="../img/scan-1.gif">
+    <img id="scan-gif-2" class="half-page-svg hidden" src="../img/scan-2.gif">
+    <img id="scan-gif-3" class="half-page-svg hidden" src="../img/scan-complete.gif">
+
+    <p id="scan-tip">Flip the paper template, place it on the panel, and press SCAN.</p>
+    <button id="activate-scan">SCAN</button>
+    <button id="activate-chart" class="hidden">START</button>
+  </section> -->
+
+  <section id="chart-view" class="view-section">
+    <a href="../"><button class="return-home"><img src="../img/DIY.svg"></button></a>
+    <button class="pause-detection"><img src="../img/pause.svg"></button>
+
+    <!-- <div class="center-container"> -->
+    <h1 id="chart-title">Trends of Fruits in March 2022</h1>
+
+    <!-- <div class="chart-container"> -->
+    <div id="y-axis">
+      <div id="y-axis-labels">
+        <span>100</span>
+        <span>75</span>
+        <span>50</span>
+        <span>25</span>
+        <span>0</span>
+      </div>
+      <div id="y-bar"></div>
+    </div>
+    <div id="x-axis"></div>
+
+    <canvas id="line-chart" width="406" height="275"></canvas>
+
+    <div id="chart-icons">
+      <img class="fruit-icon" src="../img/fruit/red-apple.svg" alt="Large Red apple vector drawing">
+      <img class="fruit-icon" src="../img/fruit/mango.svg" alt="Large Red apple vector drawing">
+      <img class="fruit-icon" src="../img/fruit/watermelon.svg" alt="Large Red apple vector drawing">
+      <img class="fruit-icon" src="../img/fruit/orange.svg" alt="Large Red apple vector drawing">
+      <img class="fruit-icon" src="../img/fruit/green-lemon.svg" alt="Large Red apple vector drawing">
+    </div>
+    <!-- </div> -->
+
+    <!-- </div> -->
+
+  </section>
+</body>
+
+</html>
