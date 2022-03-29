@@ -7,44 +7,99 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mali:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mali&family=Patrick+Hand&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../style.css">
-  <script src="https://unpkg.com/beholder-detection@1.3.0/dist/beholder-detection.js"></script>
+  <link rel="stylesheet" href="../main.css">
+  <script src="https://unpkg.com/beholder-detection@1.3.2/dist/beholder-detection.js"></script>
 
   <script src="ChartManager.js"></script>
   <script src="index.js"></script>
+
+  <style>
+    #pause-detection {
+      right: 10px;
+      top: 10px;
+      padding: 10px 15px;
+    }
+
+    #return-home {
+      top: 10px;
+      left: 10px;
+      padding: 10px 14px;
+    }
+
+    #chart-stuff {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 155px;
+      padding-top: 20px;
+    }
+
+    #pie-chart {
+      position: unset;
+    }
+
+    ul#key {
+      /* margin-right: -230px; */
+      font-size: 30px;
+    }
+
+    ul#key li {
+      position: relative;
+      list-style: none;
+      margin: 9px 0px;
+    }
+
+    ul#key li::before {
+      content: " ";
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: -40px;
+      top: 7px;
+      border-radius: 3px;
+    }
+
+    li.red-before::before {
+      background-color: #FA008F; 
+    }
+
+    li.purple-before::before {
+      background-color: #7361CE;
+    }
+    li.green-before::before {
+      background-color: #9FCB27;
+    }
+    li.yellow-before::before {
+      background-color: #FCCE2E;
+    }
+    li.orange-before::before {
+      background-color: #FB8C36;
+    }
+  </style>
 </head>
 
 <body>
   <section id="beholder-root" class="hidden"></section>
-  <!-- <section id="beholder-root"></section> -->
 
-  <!-- <section id="landing-view" class="view-section">
-    <img class="half-page-svg" src="../img/start_screen_preview.svg">
-    <button id="activate-tutorial">Tutorial</button>
-    <button id="activate-diy-bar">DIY Charts</button>
-  </section>
-
-  <section id="scan-view" class="view-section offscreen">
-    <img id="scan-gif-1" class="half-page-svg" src="../img/scan-1.gif">
-    <img id="scan-gif-2" class="half-page-svg hidden" src="../img/scan-2.gif">
-    <img id="scan-gif-3" class="half-page-svg hidden" src="../img/scan-complete.gif">
-
-    <p id="scan-tip">Flip the paper template, place it on the panel, and press SCAN.</p>
-    <button id="activate-scan">SCAN</button>
-    <button id="activate-chart" class="hidden">START</button>
-  </section> -->
-
-  <section id="bar-chart-view" class="view-section offscreen">
+  <section id="bar-chart-view" class="view-section">
     <button id="return-home"><img src="../img/DIY.svg"></button>
     <button id="pause-detection"><img src="../img/pause.svg"></button>
 
+    <div id="chart-stuff">
+    <ul id="key">
+      <li class="red-before">Right Hand</li>
+      <li class="yellow-before">Left Hand</li>
+      <li class="green-before">Blindfolded</li>
+      <li class="orange-before">Behind the Back</li>
+      <li class="purple-before">Stiff Elbows</li>
+
+    </ul>
+
     <canvas id="pie-chart" width="500" height="300"></canvas>
-
-
-    <!-- <canvas id="scanned-chart-stuff" class="hidden" width=310 height=30></canvas> -->
-
+  </div>
   </section>
 </body>
 

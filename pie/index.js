@@ -1,7 +1,7 @@
 const Beholder = window['beholder-detection'].default;
 let config = {
   camera_params: {
-    videoSize: 1, // The video size values map to the following [320 x 240, 640 x 480, 1280 x 720, 1920 x 1080]
+    videoSize: 0, // The video size values map to the following [320 x 240, 640 x 480, 1280 x 720, 1920 x 1080]
     rearCamera: true, // Boolean value for defaulting to the rear facing camera. Only works on mobile
     torch: true, // Boolean value for if torch/flashlight is on. Only works for rear facing mobile cameras. Can only be set from init
   },
@@ -12,12 +12,12 @@ let config = {
     sizeAfterPerspectiveRemoval: 49,
     area: {
       start: {
-        x: 0.35,
-        y: 0.16
+        x: 0.55,
+        y: 0.10
       },
       end: {
-        x: 0.98,
-        y: 0.85
+        x: 1,
+        y: 0.95
       },
     },
   },
@@ -141,14 +141,10 @@ window.onload = () => {
   }))
   chartCanvas = document.querySelector('#pie-chart');
   chartCtx = chartCanvas.getContext('2d');
+
+  chartCanvas.width = window.innerWidth / 2;
+  chartCanvas.height = window.innerHeight - 20;
   initController();
-  // document.querySelector('#activate-tutorial').addEventListener('click', activateTutorial);
-  // this toggle's it for now, no feedback tho
-  // document.querySelector('#pause-detection').addEventListener('click', () => (runDetection = !runDetection))
-  // document.querySelector('#return-home').addEventListener('click', returnHome);
-  // document.querySelector('#activate-diy-bar').addEventListener('click', activateDIY);
-  // document.querySelector('#activate-scan').addEventListener('click', runScan);
-  // document.querySelector('#activate-chart').addEventListener('click', activateDIYChart);
 
 
 }
