@@ -11,6 +11,14 @@
   box-sizing: border-box;
 }
 
+html {
+  /* background-image: url('./img/bar-screen.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: 100%; */
+}
+
 body {
   color: var(--theme-blue);
   background-color: var(--theme-white);
@@ -36,7 +44,7 @@ body {
   transition: left 300ms ease-in-out;
   border-radius: 3px;
   border: 2px solid var(--theme-blue);
-  background-color: var(--theme-white);
+  /* background-color: var(--theme-white); */
 }
 
 /**BUTTONS**/
@@ -131,22 +139,23 @@ body {
 
 #chart-title {
   text-align: center;
-  padding-top: 20px;
-  font-size: 36px;
+  padding-top: 14px;
+  font-size: 37px;
   letter-spacing: 3px;
+  font-family: "Mali" !important;
 }
 
 #chart-bars {
   display: flex;
   /* justify-content: center; */
   align-items: flex-end;
-  width: 406px;
+  width: 413px;
   height: 250px;
-  gap: 40px;
+  gap: 51px;
   position: absolute;
-  top: 93px;
+  top: 69px;
   left: calc(50vw - 206px);
-  /* background-color: red; */
+  /* background-color: red;*/
 }
 
 #bar-0 {
@@ -169,15 +178,24 @@ body {
   background-color: #C2D052;
 }
 
+.screen-title {
+  font-family: "Mali" !important;
+  font-weight: 700;
+  font-size: 17px;
+  color: #7D7D7D;
+}
+
 .chart-bar {
   border-radius: 2px;
   transition: height 300ms ease-in-out, color 300ms ease-out;
   position: relative;
-  height: 0px;
+  /* height: 0px; */
+  height: 173px;
   width: 40px;
-  margin-left: 6px;
+  margin-left: 3px;
   /* margin: 0 30px; */
   color: #000;
+  /* opacity: 0.8; */
 }
 
 .bar-val {
@@ -196,32 +214,26 @@ body {
   display: flex;
   /* position: absolute; */
   position: relative;
-  top: 60%;
+  top: 68%;
   justify-content: center;
   width: 100%;
 }
 
 .fruit-icon {
-  /* width: 75px;
-  margin: 0 8px;
-  background: var(--theme-white);
-  border: 8px solid var(--theme-blue);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 12px;
-  padding: 9px; */
-  width: 61px;
-  margin: 0 15px;
+  width: 54px;
+  margin: 0 20px;
   /* background: var(--theme-white); */
   /* border: 6px solid var(--theme-blue); */
   /* box-shadow: 0px 4px 4px rgb(0 0 0 / 25%); */
   border-radius: 12px;
   padding: 9px;
+  /* opacity: 0.9; */
 }
 
 .return-home {
   position: absolute;
   left: 20px;
-  top: 20px;
+  top: 16px;
   padding: 17px;
   border-radius: 20px;
   background: var(--theme-white);
@@ -233,7 +245,7 @@ body {
 .pause-detection {
   position: absolute;
   right: 20px;
-  top: 20px;
+  top: 16px;
   padding: 17px 20px;
   border-radius: 20px;
 }
@@ -241,21 +253,21 @@ body {
 #x-axis {
   position: absolute;
   height: 6px;
-  left: calc(50vw - 220px);
-  width: 430px;
-  top: 342px;
+  left: calc(50vw - 228px);
+  width: 439px;
+  top: 313px;
   background-color: black;
 }
 
 #y-axis {
   position: absolute;
-  height: 400px;
-  top: 90px;
-  left: calc(50vw - 227px);
+  height: 342px;
+  top: 76px;
+  left: calc(50vw - 225px);
 }
 
 #y-bar {
-  height: 258px;
+  height: 243px;
   width: 1.5vh;
   background-color: black;
   position: absolute;
@@ -267,17 +279,18 @@ body {
   justify-content: space-between;
   flex-flow: column;
   position: absolute;
-  top: -20.8px;
-  gap: 23.6px;
-  left: -20px;
+  top: -14.8px;
+  gap: 20.5px;
+  left: -21px;
 }
 
 #y-axis-labels span {
-  font-size: 29px;
+  font-size: 27px;
   text-align: center;
   width: 100%;
   position: relative;
   margin-left: -30px;
+  margin-top: 1px;
 }
 
 #y-axis-labels span::after {
