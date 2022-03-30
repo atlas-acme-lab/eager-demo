@@ -120,7 +120,6 @@ function updateController() {
   }
 
   requestAnimationFrame(updateController);
-
 }
 
 
