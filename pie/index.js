@@ -1,7 +1,7 @@
 const Beholder = window['beholder-detection'].default;
 let config = {
   camera_params: {
-    videoSize: 0, // The video size values map to the following [320 x 240, 640 x 480, 1280 x 720, 1920 x 1080]
+    videoSize: 1, // The video size values map to the following [320 x 240, 640 x 480, 1280 x 720, 1920 x 1080]
     rearCamera: true, // Boolean value for defaulting to the rear facing camera. Only works on mobile
     torch: true, // Boolean value for if torch/flashlight is on. Only works for rear facing mobile cameras. Can only be set from init
   },
