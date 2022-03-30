@@ -299,6 +299,11 @@ body {
   color: black;
 }
 
+.scanned-span {
+  gap: 10.5px !important;
+  top: -21px !important;
+}
+
 #y-axis-labels span::after {
   content: "";
   width: 15px;

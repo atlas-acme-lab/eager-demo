@@ -95,7 +95,8 @@ function updateController() {
 
         // do marker mapping here
         if (isDIY) setBar(i, Math.round(10 * sliderVal) * 10, 100);
-        else setBar(i, Math.round(4 * sliderVal), 4);
+        // else setBar(i, Math.round(4 * sliderVal), 4);
+        else setBar(i, Math.round(5 * sliderVal), 5);
       }
     }
     // }
