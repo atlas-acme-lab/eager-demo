@@ -20,7 +20,7 @@ let markerYMax = 0;
 let chartCanvas;
 let chartCtx;
 
-// console.log("top of beholder");
+console.log("top of beholder");
 
 let chartRegions = [{
     value: 0,
@@ -124,8 +124,8 @@ function updateController() {
 
 
 function initController() {
-  // console.log("nside initi");
+  console.log("nside initi");
   Beholder.init('#beholder-root', config);
   updateController();
-  // console.log("after iniit");
+  console.log("after iniit");
 }

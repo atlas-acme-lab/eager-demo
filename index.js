@@ -75,19 +75,19 @@ window.onload = () => {
   initController();
   // document.querySelector('#activate-tutorial').addEventListener('click', activateTutorial);
   // this toggle's it for now, no feedback tho
-  document.querySelector('#pause-detection').addEventListener('click', () => (runDetection = !runDetection))
-  document.querySelector('#return-home').addEventListener('click', returnHome);
+  // document.querySelector('#pause-detection').addEventListener('click', () => (runDetection = !runDetection))
+  // document.querySelector('#return-home').addEventListener('click', returnHome);
   // document.querySelector('#pause-line').addEventListener('click', () => (runDetection = !runDetection))
   // document.querySelector('#return-line').addEventListener('click', returnHome);
   // document.querySelector('#activate-diy-bar').addEventListener('click', () => activateScanningView("bar"));
   // document.querySelector('#activate-diy-line').addEventListener('click', () => activateScanningView("line"));
   // document.querySelector('#activate-scan').addEventListener('click', runScan);
   // document.querySelector('#activate-chart').addEventListener('click', activateDIYChart);
-  document.querySelector('#bar-0').addEventListener('click', () => changeBarColor("#bar-0"));
-  document.querySelector('#bar-1').addEventListener('click', () => changeBarColor("#bar-1"));
-  document.querySelector('#bar-2').addEventListener('click', () => changeBarColor("#bar-2"));
-  document.querySelector('#bar-3').addEventListener('click', () => changeBarColor("#bar-3"));
-  document.querySelector('#bar-4').addEventListener('click', () => changeBarColor("#bar-4"));
+  // document.querySelector('#bar-0').addEventListener('click', () => changeBarColor("#bar-0"));
+  // document.querySelector('#bar-1').addEventListener('click', () => changeBarColor("#bar-1"));
+  // document.querySelector('#bar-2').addEventListener('click', () => changeBarColor("#bar-2"));
+  // document.querySelector('#bar-3').addEventListener('click', () => changeBarColor("#bar-3"));
+  // document.querySelector('#bar-4').addEventListener('click', () => changeBarColor("#bar-4"));
 
 
   //////
