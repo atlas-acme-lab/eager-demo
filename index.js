@@ -69,20 +69,20 @@ window.onload = () => {
     hideNumTimer = 1600;
   }))
 
-  chartCanvas = document.querySelector('#line-chart');
-  chartCtx = chartCanvas.getContext('2d');
+  // chartCanvas = document.querySelector('#line-chart');
+  // chartCtx = chartCanvas.getContext('2d');
   console.log("before init");
   initController();
-  document.querySelector('#activate-tutorial').addEventListener('click', activateTutorial);
+  // document.querySelector('#activate-tutorial').addEventListener('click', activateTutorial);
   // this toggle's it for now, no feedback tho
   document.querySelector('#pause-detection').addEventListener('click', () => (runDetection = !runDetection))
   document.querySelector('#return-home').addEventListener('click', returnHome);
-  document.querySelector('#pause-line').addEventListener('click', () => (runDetection = !runDetection))
-  document.querySelector('#return-line').addEventListener('click', returnHome);
-  document.querySelector('#activate-diy-bar').addEventListener('click', () => activateScanningView("bar"));
-  document.querySelector('#activate-diy-line').addEventListener('click', () => activateScanningView("line"));
-  document.querySelector('#activate-scan').addEventListener('click', runScan);
-  document.querySelector('#activate-chart').addEventListener('click', activateDIYChart);
+  // document.querySelector('#pause-line').addEventListener('click', () => (runDetection = !runDetection))
+  // document.querySelector('#return-line').addEventListener('click', returnHome);
+  // document.querySelector('#activate-diy-bar').addEventListener('click', () => activateScanningView("bar"));
+  // document.querySelector('#activate-diy-line').addEventListener('click', () => activateScanningView("line"));
+  // document.querySelector('#activate-scan').addEventListener('click', runScan);
+  // document.querySelector('#activate-chart').addEventListener('click', activateDIYChart);
   document.querySelector('#bar-0').addEventListener('click', () => changeBarColor("#bar-0"));
   document.querySelector('#bar-1').addEventListener('click', () => changeBarColor("#bar-1"));
   document.querySelector('#bar-2').addEventListener('click', () => changeBarColor("#bar-2"));
@@ -92,18 +92,18 @@ window.onload = () => {
 
   //////
 
-  iconsCanvasLine = document.querySelector('#icon-line');
-  iconsCtxLine = iconsCanvasLine.getContext('2d');
+  // iconsCanvasLine = document.querySelector('#icon-line');
+  // iconsCtxLine = iconsCanvasLine.getContext('2d');
+  //
+  // titleCanvasLine = document.querySelector('#title-line');
+  // titleCtxLine = titleCanvasLine.getContext('2d');
 
-  titleCanvasLine = document.querySelector('#title-line');
-  titleCtxLine = titleCanvasLine.getContext('2d');
 
-
-  iconsCanvas = document.querySelector('#scanned-chart-icons');
-  iconsCtx = iconsCanvas.getContext('2d');
-
-  titleCanvas = document.querySelector('#scanned-chart-title');
-  titleCtx = titleCanvas.getContext('2d');
+  // iconsCanvas = document.querySelector('#scanned-chart-icons');
+  // iconsCtx = iconsCanvas.getContext('2d');
+  //
+  // titleCanvas = document.querySelector('#scanned-chart-title');
+  // titleCtx = titleCanvas.getContext('2d');
 
 }
 
