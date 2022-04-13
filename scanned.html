@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Al's Grocery</title>
+  <title>DIY</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,14 +14,18 @@
   <script src="https://unpkg.com/beholder-detection@1.3.0/dist/beholder-detection.js"></script>
 
   <!-- <script src="ChartManager.js"></script> -->
+  <script>
+    window.IS_SCAN = true;
+  </script>
   <script src="beholder.js"></script>
   <script src="pageFunctions.js"></script>
   <script src="index.js"></script>
 </head>
 
 <body>
-  <!-- <section id="beholder-root" class="hidden"></section> -->
-  <section id="beholder-root"> style="margin-top: 20%"></section>
+
+  <section id="beholder-root" class="hidden"></section>
+  <!-- <section id="beholder-root" class=""></section> -->
   <section id="chart-view" class="view-section">
     <!-- <img style="
     width: 100%;
@@ -29,17 +33,17 @@
     filter: grayscale();
     z-index: -9999999999;
     opacity: 0.2;" src="./img/bar-screen.png"> -->
-    <a href="../"><button class="return-home"><img src="./img/DIY.svg"></button></a>
+    <a href="./fake_figma.html"><button class="return-home"><img src="./img/DIY.svg"></button></a>
     <button class="pause-detection"><img src="./img/pause.svg"></button>
 
-    <div style="    width: 106px;
+    <img id="scanned-chart-title" src="img/fake_scans/scanning_sample-17.png" class="" width="400" height="40">
+    <!-- <div style="    width: 106px;
     position: absolute;
     left: 122px;
     top: 30px;">
       <p class="screen-title">Bar Chart Tutorial</p>
-    </div>
-    <!-- <div class="center-container"> -->
-    <h1 style="color:#3A3A3A;" id="chart-title">VIS 2022</h1>
+    </div> -->
+    <!-- <h1 style="color:#3A3A3A;" id="chart-title">VIS 2022</h1> -->
     <div id="chart-bars">
       <div id="bar-0" class="chart-bar"><span class="bar-val">0</span></div>
       <div id="bar-1" class="chart-bar"><span class="bar-val">0</span></div>
@@ -63,19 +67,7 @@
     <div id="x-axis"></div>
 
     <!-- <canvas id="line-chart" width="406" height="275"></canvas> -->
-
-    <div id="chart-icons">
-      <p class="fruit-icon fruit-text">1AC</p>
-      <p class="fruit-icon fruit-text">2AC</p>
-      <p class="fruit-icon fruit-text">R1</p>
-      <p class="fruit-icon fruit-text">R2</p>
-      <p class="fruit-icon fruit-text">R3</p>
-      <!-- <img class="fruit-icon" src="./img/fruit/red-apple.svg" alt="Large Red apple vector drawing">
-      <img class="fruit-icon" src="./img/fruit/mango.svg" alt="Large Red apple vector drawing">
-      <img class="fruit-icon" src="./img/fruit/watermelon.svg" alt="Large Red apple vector drawing">
-      <img class="fruit-icon" src="./img/fruit/lime.svg" alt="Large Red apple vector drawing">
-      <img class="fruit-icon" src="./img/fruit/orange.svg" alt="Large Red apple vector drawing"> -->
-    </div>
+    <img id="scanned-chart-icons" src="img/fake_scans/scanning_sample-18.png"  class="" width="400" height="40">
     <!-- </div> -->
 
     <!-- </div> -->

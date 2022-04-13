@@ -352,17 +352,26 @@ body {
   border: 8px solid var(--theme-shadow);
 }
 
-#scanned-chart-title, #title-line {
+#title-line {
   position: absolute;
   left: calc(50vw - 219px);
   top: 33px;
   background-color: #000;
   width: 430px;
   height: 40px;
-  transform: scaleX(-1) scaleY(-1);
+  /* transform: scaleX(-1) scaleY(-1); */
 }
 
-#scanned-chart-icons, #icon-line {
+#scanned-chart-title {
+  position: absolute;
+  left: calc(50vw - 219px);
+  top: 26px;
+  background-color: #000;
+  width: 430px;
+  height: 40px;
+}
+
+#icon-line {
   /* position: absolute;
   left: calc(50vw - 250px);
   bottom: 13px;
@@ -372,9 +381,19 @@ body {
   left: calc(50vw - 219px);
   top: 360px;
   background-color: #000;
-  transform: scaleX(-1) scaleY(-1);
+  /* transform: scaleX(-1) scaleY(-1); */
   width: 430px;
   height: 40px;
+}
+
+#scanned-chart-icons {
+  position: absolute;
+    left: calc(50vw - 219px);
+    top: 340px;
+    background-color: #000;
+    /* transform: scaleX(-1) scaleY(-1); */
+    width: 430px;
+    height: 40px;
 }
 
 #pie-chart {

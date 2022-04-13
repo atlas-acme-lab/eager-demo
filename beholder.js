@@ -7,7 +7,7 @@ let lineChartActivated = false;
 const referenceMarkerBot = 16;
 const referenceMarkerTop = 17;
 const lineMarkerMap = [0, 1, 2, 3, 4];
-const maxVH = 258;
+const maxVH = 243;
 
 const markerMoveThreshold = 1.5;
 // TODO: init these to be y min
@@ -95,8 +95,8 @@ function updateController() {
 
         // do marker mapping here
         if (isDIY) setBar(i, Math.round(10 * sliderVal) * 10, 100);
-        // else setBar(i, Math.round(4 * sliderVal), 4);
-        else setBar(i, Math.round(5 * sliderVal), 5);
+        else if (IS_SCAN) setBar(i, Math.round(5 * sliderVal), 5);
+        else setBar(i, Math.round(4 * sliderVal), 4);
       }
     }
     // }

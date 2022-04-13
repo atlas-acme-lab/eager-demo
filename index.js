@@ -12,12 +12,12 @@ let config = {
     sizeAfterPerspectiveRemoval: 49,
     area: {
       start: {
-        x: 0.30,
-        y: 0.23
+        x: 0.32,
+        y: 0.28
       },
       end: {
-        x: 0.88,
-        y: 0.75
+        x: 0.92,
+        y: 0.90
       },
     },
   },
