@@ -33,6 +33,21 @@ body {
   color: var(--theme-yellow);
 }
 
+#paper-title {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 0px;
+  color: black;
+}
+
+#paper-meta {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: black;
+  margin-top: 0px;
+  font-size: 18px;
+}
+
 /* NEW VERSION */
 .view-section {
   position: absolute;
@@ -49,7 +64,7 @@ body {
 /**BUTTONS**/
 .left-side-container {
   display: inline-block;
-  width: 65%;
+  width: 51%;
   height: 100%;
 }
 
@@ -57,7 +72,7 @@ body {
   display: inline-block;
   vertical-align: top;
   /* background-color: red; */
-  width: 30%;
+  width: 44%;
   height: 100%;
 }
 
@@ -114,6 +129,10 @@ body {
 
 #activate-diy-bar {
   /* top: 150px; */
+}
+
+#title {
+  margin-top: 14%;
 }
 
 #landing-view button {
@@ -388,12 +407,12 @@ body {
 
 #scanned-chart-icons {
   position: absolute;
-    left: calc(50vw - 219px);
-    top: 340px;
-    background-color: #000;
-    /* transform: scaleX(-1) scaleY(-1); */
-    width: 430px;
-    height: 40px;
+  left: calc(50vw - 219px);
+  top: 340px;
+  background-color: #000;
+  /* transform: scaleX(-1) scaleY(-1); */
+  width: 430px;
+  height: 40px;
 }
 
 #pie-chart {
