@@ -7,13 +7,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Mali:wght@700&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=Mali:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-bar.css">
   <script src="https://unpkg.com/beholder-detection@1.3.0/dist/beholder-detection.js"></script>
-
-  <!-- <script src="ChartManager.js"></script> -->
   <script>
     window.IS_SCAN = false;
   </script>
@@ -23,60 +19,54 @@
 </head>
 
 <body>
-  <!-- <section id="beholder-root" class="hidden"></section> -->
-  <section id="beholder-root"> style="margin-top: 20%"></section>
+  <div class="turnDeviceNotification">
+    <img src="device.png">
+  </div>
+  <section id="beholder-root"></section>
   <section id="chart-view" class="view-section">
-    <!-- <img style="
-    width: 100%;
-    height: 100%;
-    filter: grayscale();
-    z-index: -9999999999;
-    opacity: 0.2;" src="./img/bar-screen.png"> -->
-    <a href="../"><button class="return-home"><img src="./img/DIY.svg"></button></a>
-    <button class="pause-detection"><img src="./img/pause.svg"></button>
 
-    <div style="    width: 106px;
-    position: absolute;
-    left: 122px;
-    top: 30px;">
+    <!--Buttons-->
+    <a href="../">
+      <button class="return-home"><img src="./img/DIY.svg">
+      </button>
+    </a>
+    <button class="pause-detection"><img src="./img/pause.svg"></button>
+    <div id="tutorial-text" style=>
       <p class="screen-title">Bar Chart Tutorial</p>
     </div>
-    <!-- <div class="center-container"> -->
-    <h1 style="color:#3A3A3A;" id="chart-title">Quantities of Fruits</h1>
-    <div id="chart-bars">
-      <div id="bar-0" class="chart-bar"><span class="bar-val">0</span></div>
-      <div id="bar-1" class="chart-bar"><span class="bar-val">0</span></div>
-      <div id="bar-2" class="chart-bar"><span class="bar-val">0</span></div>
-      <div id="bar-3" class="chart-bar"><span class="bar-val">0</span></div>
-      <div id="bar-4" class="chart-bar"><span class="bar-val">0</span></div>
-    </div>
 
-    <!-- <div class="chart-container"> -->
-    <div id="y-axis">
-      <div id="y-axis-labels">
-        <span>4</span>
-        <span>3</span>
-        <span>2</span>
-        <span>1</span>
-        <span>0</span>
+    <!--Center Container for Chart -->
+    <!--TODO: Convert to CANVAS-->
+    <div class="center-container">
+      <h1 id="chart-title">Quantities of Fruits</h1>
+      <div id="chart-bars">
+        <div id="bar-0" class="chart-bar"><span class="bar-val">0</span></div>
+        <div id="bar-1" class="chart-bar"><span class="bar-val">0</span></div>
+        <div id="bar-2" class="chart-bar"><span class="bar-val">0</span></div>
+        <div id="bar-3" class="chart-bar"><span class="bar-val">0</span></div>
+        <div id="bar-4" class="chart-bar"><span class="bar-val">0</span></div>
       </div>
-      <div id="y-bar"></div>
+      <div id="y-axis">
+        <div id="y-axis-labels">
+          <span>4</span>
+          <span>3</span>
+          <span>2</span>
+          <span>1</span>
+          <span>0</span>
+        </div>
+        <div id="y-bar"></div>
+      </div>
+      <div id="x-axis"></div>
+
+      <div id="chart-icons">
+        <img class="fruit-icon" src="./img/fruit/red-apple.svg" alt="Large Red apple vector drawing">
+        <img class="fruit-icon" src="./img/fruit/mango.svg" alt="Large Red apple vector drawing">
+        <img class="fruit-icon" src="./img/fruit/watermelon.svg" alt="Large Red apple vector drawing">
+        <img class="fruit-icon" src="./img/fruit/lime.svg" alt="Large Red apple vector drawing">
+        <img class="fruit-icon" src="./img/fruit/orange.svg" alt="Large Red apple vector drawing">
+      </div>
+
     </div>
-    <div id="x-axis"></div>
-
-    <!-- <canvas id="line-chart" width="406" height="275"></canvas> -->
-
-    <div id="chart-icons">
-      <img class="fruit-icon" src="./img/fruit/red-apple.svg" alt="Large Red apple vector drawing">
-      <img class="fruit-icon" src="./img/fruit/mango.svg" alt="Large Red apple vector drawing">
-      <img class="fruit-icon" src="./img/fruit/watermelon.svg" alt="Large Red apple vector drawing">
-      <img class="fruit-icon" src="./img/fruit/lime.svg" alt="Large Red apple vector drawing">
-      <img class="fruit-icon" src="./img/fruit/orange.svg" alt="Large Red apple vector drawing">
-    </div>
-    <!-- </div> -->
-
-    <!-- </div> -->
-
   </section>
 </body>
 

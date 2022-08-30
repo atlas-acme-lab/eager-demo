@@ -22,6 +22,7 @@ body {
   color: var(--theme-blue);
   background-color: var(--theme-white);
   font-family: 'Patrick Hand';
+  overflow-y: hidden;
 }
 
 /* MODIFIERS */
@@ -50,14 +51,18 @@ body {
 
 /* NEW VERSION */
 .view-section {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  transition: left 300ms ease-in-out;
+  /* position: absolute; */
+  /* left: 0; */
+  /* top: 0; */
+  /* width: 100vw; */
+  /* height: 100vh; */
+  /* transition: left 300ms ease-in-out; */
   border-radius: 3px;
   border: 2px solid var(--theme-blue);
+  /* background-color: var(--theme-white); */
+  padding: 38px;
+  height: 100%;
+  width: auto;
   /* background-color: var(--theme-white); */
 }
 
@@ -147,7 +152,7 @@ body {
 }
 
 #landing-view .half-page-svg {
-  height: 100vh;
+  height: 100%;
   /* margin-left: 7vw; */
 }
 
