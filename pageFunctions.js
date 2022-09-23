@@ -137,6 +137,7 @@ function activateDIYChart() {
 
 
 function activateDIYBarChart() {
+  console.log('bar');
   document.querySelector('#bar-chart-view').classList.remove('offscreen');
   document.querySelector('#scan-view').classList.add('offscreen');
 
@@ -153,6 +154,7 @@ function activateDIYBarChart() {
 }
 
 function acitvateDIYLineChart() {
+  console.log('line');
   document.querySelector('#line-chart-view').classList.remove('offscreen');
   // document.querySelector('#line-chart-view').classList.remove('hidden');
   document.querySelector('#scan-view').classList.add('offscreen');
@@ -169,6 +171,7 @@ function acitvateDIYLineChart() {
 
 function returnHome() {
   console.log("enter");
+  console.log('return home');
   barChartActivated = false;
   lineChartActivated = false;
   document.querySelector('#line-chart-view').classList.add('offscreen');

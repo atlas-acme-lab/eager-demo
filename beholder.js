@@ -21,6 +21,7 @@ let chartCanvas;
 let chartCtx;
 
 console.log("top of beholder");
+console.warn("FOR DEVS: Beholder is initialized to use rear camera, this will cause error on desktop because that doesn't exist")
 
 let chartRegions = [{
     value: 0,

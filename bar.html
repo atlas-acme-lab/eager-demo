@@ -9,13 +9,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mali:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style-bar.css">
-  <script src="https://unpkg.com/beholder-detection@1.3.0/dist/beholder-detection.js"></script>
+  <script src="https://unpkg.com/beholder-detection@1.3.3/dist/beholder-detection.js"></script>
   <script>
     window.IS_SCAN = false;
   </script>
-  <script src="beholder.js"></script>
-  <script src="pageFunctions.js"></script>
-  <script src="index.js"></script>
+  <script src="bar.js"></script>
+  <style>
+    .center-container {
+      position: relative;
+      background-color: white;
+    }
+
+    h1, button {
+      z-index: 10;
+    }
+
+    #bar-canvas{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 11;
+    }
+  </style>
+  <!-- <script src="beholder.js"></script> -->
+  <!-- <script src="pageFunctions.js"></script> -->
+  <!-- <script src="index.js"></script> -->
 </head>
 
 <body>
@@ -26,7 +44,7 @@
   <section id="chart-view" class="view-section">
 
     <!--Buttons-->
-    <a href="../">
+    <a href="./index.html">
       <button class="return-home"><img src="./img/DIY.svg">
       </button>
     </a>
@@ -39,7 +57,8 @@
     <!--TODO: Convert to CANVAS-->
     <div class="center-container">
       <h1 id="chart-title">Quantities of Fruits</h1>
-      <div id="chart-bars">
+      <canvas id="bar-canvas"></canvas>
+      <!-- <div id="chart-bars">
         <div id="bar-0" class="chart-bar"><span class="bar-val">0</span></div>
         <div id="bar-1" class="chart-bar"><span class="bar-val">0</span></div>
         <div id="bar-2" class="chart-bar"><span class="bar-val">0</span></div>
@@ -56,7 +75,7 @@
         </div>
         <div id="y-bar"></div>
       </div>
-      <div id="x-axis"></div>
+    -->
 
       <div id="chart-icons">
         <img class="fruit-icon" src="./img/fruit/red-apple.svg" alt="Large Red apple vector drawing">
@@ -64,7 +83,7 @@
         <img class="fruit-icon" src="./img/fruit/watermelon.svg" alt="Large Red apple vector drawing">
         <img class="fruit-icon" src="./img/fruit/lime.svg" alt="Large Red apple vector drawing">
         <img class="fruit-icon" src="./img/fruit/orange.svg" alt="Large Red apple vector drawing">
-      </div>
+      </div> 
 
     </div>
   </section>
