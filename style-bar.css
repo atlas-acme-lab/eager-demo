@@ -15,7 +15,7 @@ body {
   color: var(--theme-blue);
   background-color: var(--theme-white);
   font-family: 'Patrick Hand';
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   height: 100vh;
   width: 100vw;
 }
