@@ -23,7 +23,7 @@ let chartCtx;
 const Beholder = window['beholder-detection'].default;
 let config = {
   camera_params: {
-    videoSize: 1, // The video size values map to the following [320 x 240, 640 x 480, 1280 x 720, 1920 x 1080]
+    videoSize: 2, // The video size values map to the following [320 x 240, 640 x 480, 1280 x 720, 1920 x 1080]
     rearCamera: true, // Boolean value for defaulting to the rear facing camera. Only works on mobile
     torch: true, // Boolean value for if torch/flashlight is on. Only works for rear facing mobile cameras. Can only be set from init
   },
@@ -39,7 +39,7 @@ let config = {
       },
       end: {
         x: 0.92,
-        y: 0.90
+        y: 1
       },
     },
   },
@@ -175,7 +175,7 @@ function updateController() {
   // chartCtx.fillRect(0,0, 100, 100);
   // console.log('eh');
   chartRegions.forEach((c, i) => {
-    c.value = lerp(c.value, c.targetValue, 0.06);
+    c.value = lerp(c.value, c.targetValue, 0.6);
     chartCtx.fillStyle = c.color;
     chartCtx.fillRect(
       chartCanvas.width * 0.23 + i * chartCanvas.width * 0.12, chartCanvas.height * 0.8,

@@ -151,12 +151,12 @@ position: relative; */
   border-radius: 20px;
 }
 
-#beholder-overlay {
+/* #beholder-overlay {
   bottom: 19% !important;
   left: 2% !important;
   position: absolute;
   top: unset !important;
-}
+} */
 
 .center-container {
   height: 100%;
@@ -311,8 +311,9 @@ position: relative; */
 
 #chart-icons {
   display: flex;
-  /* position: absolute; */
-  position: relative;
+  position: absolute;
+  bottom: 15%;
+  /* position: relative; */
   /* top: 10%; */
   justify-content: center;
   width: 100%;
